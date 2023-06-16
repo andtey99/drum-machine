@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# You can test the app from the link below
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://andtey99.github.io/drum-machine/
 
 ## Available Scripts
 
