@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import DrumPad from "./components/drumPad.jsx";
+import DisplaySound from "./components/displaySound.jsx";
+import "./styles/drumMachine.css"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+  const [currentSound, setCurrentSound] = useState('Let\'s start!');
+  const [workState, setWorkState] = useState(true);
+  
+  return <div className="drum-machine">
+    <DrumPad setCurrentSound={setCurrentSound} workState={workState} />
+    <DisplaySound currentSound={currentSound} setCurrentSound={setCurrentSound} workState={workState} setWorkState={setWorkState} />
+  </div>
 }
 
 export default App;

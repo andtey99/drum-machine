@@ -1,0 +1,16 @@
+.drum-machine {
+    position: absolute;
+    padding: 30px;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 50px;
+    border: 5px solid rgb(252, 128, 61);
+}
+
+@media (max-width: 650px) {
+    .drum-machine {
+        flex-direction: column-reverse;
+    }
+}

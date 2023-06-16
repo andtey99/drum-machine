@@ -1,0 +1,42 @@
+.displaySound {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.displaySound span {
+    background-color: rgb(150, 150, 150);
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    align-self: center;
+    min-width: 300px;
+    padding: 15px 0px;
+}
+
+h3 {
+    text-align: center;
+    margin: 0 0 5px;
+}
+
+.toggler {
+    margin: 0 auto;
+    max-width: 60px;
+    height: 30px;
+    background-color: #000;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 20px;
+}
+
+.block {
+    background-color: rgb(252, 128, 61);
+    margin: 0 2.5px;
+    width: 25px;
+    height: 25px;
+    align-self: center;
+}
+
+.disabled {
+    justify-content: start;
+}
